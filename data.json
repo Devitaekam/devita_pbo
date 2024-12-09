@@ -1,0 +1,20 @@
+[
+    {
+        "id": "6756c9e4db45a",
+        "nama": "bergo",
+        "harga": "15",
+        "stok": "10"
+    },
+    {
+        "id": "6756ca2c25b40",
+        "nama": "jeans",
+        "harga": "95",
+        "stok": "10"
+    },
+    {
+        "id": "6756ca44d9e84",
+        "nama": "sweater",
+        "harga": "68",
+        "stok": "20"
+    }
+]

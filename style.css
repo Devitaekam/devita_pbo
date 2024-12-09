@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #e0f7fa; /* Warna baby blue */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk navigasi */
+nav {
+    display: flex;
+    justify-content: center; /* Item ditata di tengah */
+    gap: 20px; /* Jarak antar tautan */
+    background-color: #80deea; /* Warna baby blue cerah */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    border-radius: 5px; /* Membulatkan sudut */
+    margin-bottom: 20px; /* Spasi bawah */
+}
+
+nav a {
+    color: #fff; /* Warna teks putih */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Teks sejajar dengan ikon */
+    gap: 8px; /* Jarak antara ikon dan teks */
+    transition: color 0.3s, background-color 0.3s, transform 0.3s ease; /* Animasi hover */
+    padding: 8px 15px; /* Padding untuk klik area */
+    border-radius: 5px; /* Membulatkan area klik */
+}
+
+nav a:hover {
+    color: #e0f7fa; /* Warna teks saat hover */
+    background-color: #4caf50; /* Warna hijau saat hover */
+    transform: scale(1.05); /* Animasi membesar sedikit */
+}
+
+nav a i {
+    font-size: 18px; /* Ukuran ikon */
+}
+
+h1 {
+    text-align: center;
+    color: #004d40; /* Warna hijau gelap untuk judul */
+}
+
+.katalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    margin: 10px 0;
+    color: #004d40; /* Warna hijau gelap */
+}
+
+.item p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #80deea; /* Warna baby blue untuk border */
+}
+
+th, td {
+    padding: 8px;
+    text-align: center; /* Semua teks di tabel rata tengah */
+    background-color: #e0f7fa; /* Warna baby blue lembut untuk latar */
+    color: #004d40; /* Warna teks hijau gelap */
+}
+
+.btn {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-add {
+    background-color: #80deea; /* Warna baby blue cerah untuk tombol tambah */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Warna merah untuk tombol hapus */
+}
+
+/* Tombol edit dan hapus */
+table td a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+table td a[href*="edit"] {
+    background-color: #80deea; /* Warna baby blue pastel untuk tombol edit */
+}
+
+table td a[href*="#"] {
+    background-color: #dc3545; /* Warna merah untuk tombol hapus */
+}
+
+table td a:hover {
+    opacity: 0.8;
+}
+
+/* Katalog Grid */
+.katalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Kolom fleksibel */
+    gap: 20px; /* Jarak antar item */
+    margin-top: 20px;
+}
+
+.katalog-grid .item {
+    background-color: #e0f7fa; /* Warna latar baby blue */
+    border: 1px solid #80deea; /* Warna border */
+    border-radius: 8px; /* Membulatkan sudut */
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.katalog-grid .item:hover {
+    transform: scale(1.05); /* Animasi zoom saat hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Perbesar bayangan */
+}
+
+.katalog-grid .item img {
+    max-width: 100%; /* Atur gambar agar sesuai dengan kotak */
+    height: auto; /* Jaga proporsi gambar */
+    border-radius: 8px; /* Membulatkan sudut gambar */
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+.katalog-grid .item h3 {
+    margin: 10px 0 5px; /* Jarak antar elemen */
+    color: #004d40; /* Warna teks hijau gelap */
+}
+
+.katalog-grid .item p {
+    margin: 0;
+    color: #00796b; /* Warna teks hijau sedang */
+    font-weight: bold;
+}
